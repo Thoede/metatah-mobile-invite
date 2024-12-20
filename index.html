@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mepandes Invitation">
+  <title>Undangan Metatah</title>
+  <link rel="icon" href="aset/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="aset/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="overlay" class="overlay">
+  <div class="background-slider"></div>
+  <div class="overlay-content">
+    <h1>Selamat Datang</h1>
+    <br><br><br><br><br>
+    <p>Kepada Yth: Bapak/Ibu/Saudara</p>
+    <h5>Tamu Undangan</h1>
+    <button id="open-invitation" class="btn">Buka Undangan</button>
+  </div>
+</div>
+<audio id="background-audio" src="aset/audio.mp3" preload="auto" loop></audio>
+
+
+
+  <div class="container">
+    <section class="headerimage"></section>
+    <header class="header fade-in">
+      <h1>Undangan</h1>
+      <p class="subtitle">Om Swastiastu, dengan hormat kami mengundang anda untuk menghadiri upacara Metatah anak kami. </p>
+    </header>
+    
+     <div class="photo fade-in">
+      <img src="aset/circleframe.png" alt="Foto Anak" class="circle-img">
+    </div> 
+
+    <section class="name-list">
+      <h2>METATAH</h2>
+      <hr class="line">
+      <ul>
+        <li class="cewek">Jane Doe</li><br>
+        <li class="cowok">John Doe</li><br>
+        <li class="cowok">John Doe</li><br>
+        <li class="cewek">Jane Doe</li><br>
+      </ul>
+      
+      <hr class="line">
+    </section>
+    
+
+    <section class="details fade-in">
+      <h2>Detail Acara</h2>
+      <p><strong>Tanggal:</strong> 18 Februari 2029</p>
+      <p><strong>Waktu:</strong> 12:00 WITA</p>
+      <p><strong>Tempat:</strong> Jl. Suli No.87 🏠</p>
+      <img src="aset/LokasiMap.png" class="lokasimap" id="map-image">
+      <a href="https://maps.app.goo.gl/HhkZcZeFouAzryZSA" target="_blank" class="btn">Lihat Lokasi</a>
+    </section>
+    
+    <!-- Countdown -->
+    <section class="countdown fade-in">
+        <div class="time-box">
+          <div class="time" id="days"></div>
+          <div class="label">Hari</div>
+        </div>
+        <div class="time-box">
+          <div class="time" id="hours"></div>
+          <div class="label">Jam</div>
+        </div>
+        <div class="time-box">
+          <div class="time" id="minutes"></div>
+          <div class="label">Menit</div>
+        </div>
+        <div class="time-box">
+          <div class="time" id="seconds"></div>
+          <div class="label">Detik</div>
+        </div>
+      </section>
+    
+    <!-- RSVP  -->
+    <section class="rsvp fade-in">
+      <h2>Konfirmasi Kehadiran</h2>
+      <form id="rsvp-form">
+        <input type="text" id="name" placeholder="Nama Anda" required>
+        <input type="number" id="attendees" placeholder="Jumlah Kehadiran" required>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+      <div id="form-error" class="error-message"></div>
+    </section>
+
+    <!-- FOOTER --> 
+    <footer class="footer fade-in">
+      <p>Om Shanti Shanti Shanti Om</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
