@@ -10,8 +10,9 @@ Hi, Welcome to my Metatah Invitation Mobile Website! This website is used to inv
 - RSVP
 
 ## Local Development (Running the Website on Your Computer)
-  1.```bash
-    git https://github.com/Thoede/metatah-mobile-invite/tree/main
+  1.```bash 
+  git https://github.com/Thoede/metatah-mobile-invite/tree/main
+
     - Alternatively, download the ZIP file of the project and extract it to your preferred directory.
   2. Open the Project Folder: Navigate to the folder where the project files are located.
   3. Open the HTML File: Open the index.html file in your web browser (e.g., Chrome, Firefox, Safari). This will display the website locally.
